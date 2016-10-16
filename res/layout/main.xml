@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#e7f5f4"
+              android:theme="@android:style/Theme.Material"
+              android:gravity="center">
+
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:layout_weight="1" android:background="#e7f5f4"
+                android:fillViewport="true">
+        <ListView
+            android:id="@+id/messages_history_listview"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        </ListView>
+    </ScrollView>
+    <LinearLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:orientation="horizontal"
+            android:elevation="20dp" android:background="@android:color/black"
+            android:clipToPadding="false" android:layout_alignParentBottom="true">
+        <EditText
+                android:layout_width="wrap_content" android:layout_height="fill_parent"
+                android:gravity="center_vertical" android:textSize="14dp"
+                android:padding="5dp" android:textColor="#444"
+                android:background="#FFCDD2" android:hint="Sending as Sam..."
+                android:layout_weight="1" android:textColorHint="#888"/>
+
+        <Button
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Send" android:background="#EF5350" android:textSize="14dp"
+                />
+    </LinearLayout>
+</LinearLayout>
+
